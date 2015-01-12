@@ -41,6 +41,9 @@
 			}
 			.shadow {
 				text-shadow: 3px 3px 2px rgba(130, 130, 45, 1) !important;
+				background-color: rgba(0,0,0,0.5) !important;
+				padding: 50px !important;
+				display: block !important;
 			}
 		</style>
 
@@ -74,7 +77,7 @@
 					<p>Part case-study and part explanation of experiences and discoveries from more than a year of using Drupal as an agile tool
 					to fix legacy publishing workflows, process content and deliver/receive content from a variety of sources</p>
 					<p>
-						<small>Created by: <a href="http://chris-david-hall.info">Chris Hall</a> / <a href="http://twitter.com/cwork-chris">@cwork-chris</a> Slides can be found: <a href="#">here</a></small>
+						<small>Created by: <a href="http://chris-david-hall.info">Chris Hall</a> / <a href="http://twitter.com/cwork-chris">@cwork-chris</a> Slides can be found: <a href="https://github.com/chris-hall-hu/Drupal-Content-Swiss-Army-Knife-talk">here</a></small>
 					</p>
 				</section>
 
@@ -82,10 +85,10 @@
 					<section>
 					  <h2>Brought to you by:</h2>
 					  <ul>
-					    <li><strong>Chris Hall</strong> <a href="http://twitter.com/cwork-chris">@cwork-chis</a>, a freelance/contract Drupal/PHP </li>
-					    <li>An honorable mention to <strong>Tim Corkerton</strong> <a href="https://twitter.com/TimCorkerton">@TimCorkerton</a>, who worked with me for a while.</li>
-					    <li>And thanks to <strong>Atom Content Marketing</strong> <a href="https://twitter.com/AtomCMarketing">@AtomCMarketing</a>, who let me share a little information and work with their clients.</li>
-					    <li>An on-going struggle to realise <em>Agility</em> where it was really needed.</li>
+					    <li><strong>Chris Hall</strong> <a href="http://twitter.com/cwork-chris">@cwork-chis</a>, a freelance/contract Drupal/PHP Developer</li>
+					    <li>An honorable mention to <strong>Tim Corkerton</strong> <a href="https://twitter.com/TimCorkerton">@TimCorkerton</a>, who worked with me for a while</li>
+					    <li>And thanks to <strong>Atom Content Marketing</strong> <a href="https://twitter.com/AtomCMarketing">@AtomCMarketing</a>, who let me share a little information and work with their clients</li>
+					    <li>An on-going struggle to realise <em>Agility</em> where it was really needed</li>
 						</ul>
           </section>
 					<section>
@@ -111,7 +114,7 @@
 					<ul>
 					  <li>The Backstory</li>
 						<li>Drupal what is it good for? (hint: Content)</li>
-						<li>Content for non-developers</li>
+						<li>Prior to writing any PHP</li>
 						<li>Content for developers</li>
 						<li>Content in and Content out</li>
 						<li>Alternative use cases for Drupal</a>
@@ -134,10 +137,10 @@
 						  Prior to Drupal, I had already worked with a variety of technologies and frameworks, going back into the mists of time, Cold Fusion, Perl, Java based etc.</p>
 					  </p>
 					  <ul>
-					    <li>Had been using Drupal for a few years in a number of different agencies and environments some times with mixed results, also had some exposure work with Django a Python framework</li>
+					    <li>Had been using Drupal for a few years in a number of different agencies and environments sometimes with mixed results, also had some exposure to Django a Python framework</li>
 					    <li>Found myself in a situation with highly pragmatic, shifting requirements and need to procees content (both existing and new) from many sources to many places</li>
 					    <li>There were already existing/commissioned sites implemented in Wordpress, ExpressionEngine Drupal 7, Drupal 6....</li>
-					    <li>Many content workflows, legacy sites, some based on Word Docs, email and spreadsheets</li>
+					    <li>Many content workflows, legacy sites, some based on Word docs, email and spreadsheets</li>
 				    </ul>
 				  </section>
 					<section>
@@ -157,7 +160,7 @@
 					</section>
 					<section>
 						<h2>Should I even be using Drupal?</h2>
-						<p>As an early part of the work I had to do involved taking over and finishing an ExpressionEngine site and there were existing Worpress sites as well as Drupal, I even had to ask whether I should be using Drupal at all going forward.
+						<p>As an early part of the work I had to do involved taking over and finishing an ExpressionEngine site and there were existing Wordpress sites as well as Drupal, I even had to ask whether I should be using Drupal at all going forward.
 						   Especially as I felt I was becoming a Drupal only developer and that didn't feel entirely healthly.
 						</p>
 						<p>
@@ -205,27 +208,28 @@
 					<section>
 						<h2>Notes</h2>
 						<p>Although it my seem harsh to say that Drupal is hard to learn, particularly for someone who is inside Drupal, I have encountered too many designers/frontenders who attempted to use Drupal to extend their repetoire, crashed and turned to Wordpress or similar, I have encountered too many agencies moving from Design to full service and crashing with Drupal, turning to Wordpress or ExpressionEngine or Modx ....</p>
-						<p>Note: I have not really talked about the Drupal community (which is a marvellous thing in it's own right), when looking to use a tool you shouldn't expect to have to join a <em>'support group'</em>,
+						<p>Note: I have not really talked about the Drupal community (which is a marvellous thing in it's own right) but when looking to use a tool you shouldn't expect to <em>have</em> to join a <em>'support group'</em>,
 							community support and the inertia to pull in the contrib. modules will be vital to D8 success though I think.</p>
 					</section>
 				</section>
 
 				<section>
 					<section>
-					  <h2>Content for non-developers</h2>
+					  <h2>Before we write any PHP</h2>
+						<p>Some of the things we can very easily to start building a content management system.</p>
 					  <p>
 						  Drupal has the most comprehensive administrative functionality for modelling content of any of the frameworks/tools I have used.
 					  </p>
 					  <p>
-					    The screen below is from Drupal 8, note that Drupal 8 improves things for the non-developer because a few more fields like email and date are included in Core.
+					    The screen below is from Drupal 8, note that Drupal 8 improves things for the non-developer because a few more fields like email, date and entity reference are included in Core.
 					  </p>
 				  </section>
 					<section data-background="images/fields.png">
 						  <h2 class="shadow fragment">So many possibilities</h2>
 					</section>
 				  <section>
-						  <h2>So much customisation</h2>
-							<p>Content fields can have a bewildering number options</p>
+						  <h2>Highly configurable fields</h2>
+							<p>Content fields can have lots of options </p>
 							<ul>
 								<li>Default values</li>
 								<li>Help text</li>
@@ -236,6 +240,28 @@
 					</section>
 				</section>
 
+			  <section>
+					<section>
+						<h2>Workflow</h2>
+						<p>Without lifting a finger we have revisioning, roles, permissions and a reasonable(ish) search.</p>
+						<p>Add a couple of modules such as <a href="#">Diff</a> and <a href="#">Workbench</a>, already we are building a powerful content system.
+					</section>
+					<section data-background="images/revs.png">
+						<h2 class="shadow fragment">Now I know who did what and when</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Classification</h2>
+						<p>The ease with which you can apply many taxononomies in Drupal and the tools surrounding them are not often found in other tools</p>
+					  <p>Although sometimes a little help from a module such as <a href="#">Taxonomy Manger</a> can help to organise them.
+					</section>
+					<section data-background="images/tax.png">
+            <h2 class="shadow fragment">Much better than the standard admin</h2>
+					</section>
+				</section>
+
 				<section>
 					<section>
 					  <h2>Content for Developers</h2>
@@ -243,12 +269,12 @@
 							  Developers have all the admin tools that non-developers have but they have opportunities to write code.
 							</p>
 						  <p>
-                A developer writes PHP somewhere, drupal provided hooks etc. (but not in the admin please!).
+                A developer writes PHP somewhere, Drupal provided hooks etc. etc. (but not in the admin please!).
 							</p>
 					</section>
 					<section data-background="images/rmeal.jpg">
 						  <h2 class="shadow fragment">This is not cooking</h2>
-							<h2 class="shadow fragment">Even though it may be perfectly useable</h2>
+							<h2 class="shadow fragment">Even though it may be useable</h2>
 					</section>
 				</section>
 
