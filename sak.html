@@ -201,7 +201,7 @@
 						</ul>
 					</section>
 					<section>
-						<h2>The biggest strength remains: Content</h2>
+						<h2>The main strength remains: Content</h2>
 						Often Drupal is described as a Content Management Framework(CMF) rather than a Content Management System(CMS).
 						I have to agree with this Palantir Blog <a href="http://www.palantir.net/blog/drupal-not-cms">Drupal is not a CMS</a>.
 					</section>
@@ -216,7 +216,7 @@
 				<section>
 					<section>
 					  <h2>Before we write any PHP</h2>
-						<p>Some of the things we can very easily to start building a content management system.</p>
+						<p>Some of the things we can do very easily to start building a content management system.</p>
 					  <p>
 						  Drupal has the most comprehensive administrative functionality for modelling content of any of the frameworks/tools I have used.
 					  </p>
@@ -254,8 +254,8 @@
 				<section>
 					<section>
 						<h2>Classification</h2>
-						<p>The ease with which you can apply many taxononomies in Drupal and the tools surrounding them are not often found in other tools</p>
-					  <p>Although sometimes a little help from a module such as <a href="#">Taxonomy Manger</a> can help to organise them.
+						<p>The ease with which you can apply many taxononomies in Drupal and the tools surrounding them are not often found elsewhere.</p>
+					  <p>Although sometimes a little help from a module such as <a href="#">Taxonomy Manager</a> can help to organise them.
 					</section>
 					<section data-background="images/tax.png">
             <h2 class="shadow fragment">Much better than the standard admin</h2>
@@ -264,17 +264,83 @@
 
 				<section>
 					<section>
-					  <h2>Content for Developers</h2>
+						<h2>Search and Discovery</h2>
+						<p>Once we build a large volume of content we have use the powerful <a href="#">Views</a> module help filter and sort.
+						</p>I a confident that everybody will be familiar with views, more on the subject later
+					</section>
+					<section>
+						<h2>Search API</h2>
+				    <p>The search that comes out of the box with Drupal is not too horrible, it will be vastly enchanced however by adding the <a href="#">Search Api</a> and <a href="#">Facet API module</a>
+						<blockquote>Search API can vastly enchance search even without the addition of Apache Solr</blockquote>
+				  </section>
+					<section data-background="images/facet.png">
+						<h2 class="shadow fragment">You don't need Apache Solr to start building a powerfull search</h2>
+					</section>
+					<section>
+						<h2>Notes</h2>
+						<p>Search API and the various modules that work with it can be used to build powerful searches even without the aid a Apache Solr,
+							although not as performant this may suffice if traffic is moderate and will certainly suffice for testing and development.
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Pause to reflect</h2>
+							<ul>
+								<li>We can do a lot (and so much more), without touching PHP</li>
+								<li>Drupal 8 (assuming a handful of contrib modules) can do it better, inline editing for example</li>
+								<li>This is FAST, the slow bits are trying to match those design PSDs to build a frontend.</li>
+							</ul>
+							<p>We can do better though...</p>
+					</section>
+					<section>
+							<h2>Improving the backend</h2>
+							<p>Jeni Tehan has an excellent talk on <a href="https://www.youtube.com/watch?v=53s0njgpc7U">Building a Tasty Backend</a>
+								that suggests how to significantly improve the content authoring experience using available modules and techniques.</p>
+					</section>
+				</section>
+
+				<section>
+					 <section>
+					   <h2>Usecase 1, replacing a Spreadsheet with Drupal</h2>
+						 <p>You may even reduce the amount of evilness in the world ;)</p>
+						 <p>I have encountered more than one case of content being collated, gathered and edited in Excel spreadsheets prior to website developement.</p>
+						 <p>One agency that was going to build a cheap website for a friend of mine even advised setting up a spread sheet to prepare his content (he was putting all the data from one catalog entry into a single cell).</p>
+						 <p>How quickly could you set up a simple Drupal site for data-entry on a $5-10 VPS? (the answer is very)</p>
+					 </section>
+					 <section>
+						 <ul>
+							  <li>The content can be searched, sorted</li>
+							  <li>The content can be viewed/previewed on line</li>
+							  <li>Media can be added if required</li>
+							  <li>Proper categorisation can be set up</li>
+							  <li>Most of the work is done by the client</li>
+								<li>IA etc. can to some extent develop iteratively</li>
+						 </ul>
+						 <p>Getting the content out comes later.....</p>
+						 <p>Or maybe build a theme on top of it, the content could inform your Design/UX/UI process (sorry Wordpress, but we will get back to you later.)</p>
+					 </section>
+				</section>
+
+				<section>
+					<section>
+					  <h2>Starting to add PHP</h2>
 						  <p>
 							  Developers have all the admin tools that non-developers have but they have opportunities to write code.
 							</p>
 						  <p>
-                A developer writes PHP somewhere, Drupal provided hooks etc. etc. (but not in the admin please!).
+                A developer writes PHP somewhere, Drupal provided hooks etc. I like to think of Drupal without custom code as a <em>'Ready Meal'</em>
 							</p>
 					</section>
 					<section data-background="images/rmeal.jpg">
 						  <h2 class="shadow fragment">This is not cooking</h2>
-							<h2 class="shadow fragment">Even though it may be useable</h2>
+							<h2 class="shadow fragment">Even though it may be fit for purpose</h2>
+					</section>
+					<section>
+						  <h2>Client admin -> Drupal Sitebuilder</h2>
+							<p>Why do I often sense resistence to this level of training?</p>
+							<p class="fragment">Perhaps because then they will realise there is hardly any custom code in many sites :P</p>
+							<p class="fragment">Actually most of the custom code on many sites is CSS, HTML and JS.</p>
 					</section>
 				</section>
 
