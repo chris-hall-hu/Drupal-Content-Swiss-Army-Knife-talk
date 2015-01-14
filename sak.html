@@ -45,6 +45,12 @@
 				padding: 50px !important;
 				display: block !important;
 			}
+			code {
+				font-size: x-large !important;
+			}
+			pre {
+				font-size: x-large !important;
+			}
 		</style>
 
 		<!-- For syntax highlighting -->
@@ -144,17 +150,18 @@
 				    </ul>
 				  </section>
 					<section>
-						<h2>Mixed results in the past</h2>
-						<p>Experience of Drupal not <em>always</em> good, in some projects and situations Drupal worked well, in others not!
+						<h2>Drupal has not always turned out well</h2>
+						<p>Previous experience of Drupal not <em>always</em> good, in some projects and situations Drupal worked well, in others not!
 						I have been using Drupal for longer than my three years on Drupal.org, it started as a tool, then became <em>everything</em>. My first involvement with Django was joining a project that somebody had saved from a Drupal disaster by starting from scratch.
-						The project was about data-processing and a normal Drupal approach did not work (happy to discuss over a beer). Many Drupal project have gone well however.
+						The project was about data-processing and a normal Drupal approach did not work (happy to discuss over a beer). Many Drupal projects have gone well however.
 					</section>
 					<section>
-						<h2>A new challenging environment</h2>
+						<h2>Suddenly in new challenging environment</h2>
 						<ul>
 						  <li>Shifting requirements/priorities</li>
 						  <li>Tight time-scales and budgets</li>
 							<li>Legacy and new sites</li>
+							<li>A wide variety of content sources and types</li>
 							<li>A small development team (me most of the time)</li>
 					  </ul>
 					</section>
@@ -177,14 +184,14 @@
 						<blockquote>"With Drupal features are cheap and details expensive" (WunderKraut)</blockquote>
 				  </section>
 					<section>
-            <h2>Design first approach can really crash and burn with Drupal</h2>
-						<p>WunderKraut blog <a href="http://www.wunderkraut.com/blog/how-to-fail-in-a-drupal-project-fixed-price-contracts/2013-07-10">How to fail in a Drupal project: Fixed price contracts</a>
+            <h2>Design first approach can really suck with Drupal</h2>
+						<p>This WunderKraut blog <a href="http://www.wunderkraut.com/blog/how-to-fail-in-a-drupal-project-fixed-price-contracts/2013-07-10">How to fail in a Drupal project: Fixed price contracts</a>
 						says most of what I feel after years of Drupal. If someone hands you a beautiful PSD designed project and says make it so,
 						you really may be better off with a more light-weight framework. (nobody going to drag me off the stage...?)</p>
-						<small>There are too many things for things for this talk so I will link out but don't worry all the links are on a <a href="">slide at the end :)</a></small>
+						<small>There are many linkouts for this talk, but don't worry all the links are on a <a href="">slide at the end :)</a></small>
 					</section>
 					<section>
-            <h2>Through the Lens of Drupal 8</h2>
+            <h2>Looking back through the lens of Drupal 8</h2>
 						<p>Jumping forward to the <em>imminent</em> release of Drupal 8 to look back on Drupal 7</p>
 						<p>The key difference should be to make it easier to find Drupal talent, currently Drupal has a long learning curve, even more worryingly even experienced Drupal developers
 							 may be taking different 'correct' but incompatible approaches (Panels, Context, etc. etc.) D8 will resuse some existing frameworks and more mainstream PHP design practices.
@@ -207,7 +214,7 @@
 					</section>
 					<section>
 						<h2>Notes</h2>
-						<p>Although it my seem harsh to say that Drupal is hard to learn, particularly for someone who is inside Drupal, I have encountered too many designers/frontenders who attempted to use Drupal to extend their repetoire, crashed and turned to Wordpress or similar, I have encountered too many agencies moving from Design to full service and crashing with Drupal, turning to Wordpress or ExpressionEngine or Modx ....</p>
+						<p>Although it my seem harsh to say that Drupal is hard to learn, particularly for someone who is already an <em>insider</em>, I have encountered too many designers/frontenders who attempted to use Drupal to extend their repetoire, crashed and turned to Wordpress or similar, I have encountered too many agencies moving from Design to full service and crashing with Drupal, turning to Wordpress or ExpressionEngine or Modx ....</p>
 						<p>Note: I have not really talked about the Drupal community (which is a marvellous thing in it's own right) but when looking to use a tool you shouldn't expect to <em>have</em> to join a <em>'support group'</em>,
 							community support and the inertia to pull in the contrib. modules will be vital to D8 success though I think.</p>
 					</section>
@@ -216,7 +223,7 @@
 				<section>
 					<section>
 					  <h2>Before we write any PHP</h2>
-						<p>Some of the things we can do very easily to start building a content management system.</p>
+						<p>Some of the things we can do very easily to start building our own content management system.</p>
 					  <p>
 						  Drupal has the most comprehensive administrative functionality for modelling content of any of the frameworks/tools I have used.
 					  </p>
@@ -228,7 +235,7 @@
 						  <h2 class="shadow fragment">So many possibilities</h2>
 					</section>
 				  <section>
-						  <h2>Highly configurable fields</h2>
+						  <h2>Even the fields are highly configurable</h2>
 							<p>Content fields can have lots of options </p>
 							<ul>
 								<li>Default values</li>
@@ -242,8 +249,8 @@
 
 			  <section>
 					<section>
-						<h2>Workflow</h2>
-						<p>Without lifting a finger we have revisioning, roles, permissions and a reasonable(ish) search.</p>
+						<h2>Content workflow</h2>
+						<p>Without lifting a finger we have user management, revisioning, roles and permissions.</p>
 						<p>Add a couple of modules such as <a href="#">Diff</a> and <a href="#">Workbench</a>, already we are building a powerful content system.
 					</section>
 					<section data-background="images/revs.png">
@@ -253,8 +260,8 @@
 
 				<section>
 					<section>
-						<h2>Classification</h2>
-						<p>The ease with which you can apply many taxononomies in Drupal and the tools surrounding them are not often found elsewhere.</p>
+						<h2>Content classification</h2>
+						<p>The ease with which you can apply multiple taxononomies in Drupal and the tools surrounding them are not often found elsewhere.</p>
 					  <p>Although sometimes a little help from a module such as <a href="#">Taxonomy Manager</a> can help to organise them.
 					</section>
 					<section data-background="images/tax.png">
@@ -264,9 +271,9 @@
 
 				<section>
 					<section>
-						<h2>Search and Discovery</h2>
+						<h2>Content search and discovery</h2>
 						<p>Once we build a large volume of content we have use the powerful <a href="#">Views</a> module help filter and sort.
-						</p>I a confident that everybody will be familiar with views, more on the subject later
+						</p>I am confident that everybody will be familiar with views, more on the subject later
 					</section>
 					<section>
 						<h2>Search API</h2>
@@ -305,8 +312,8 @@
 					   <h2>Usecase 1, replacing a Spreadsheet with Drupal</h2>
 						 <p>You may even reduce the amount of evilness in the world ;)</p>
 						 <p>I have encountered more than one case of content being collated, gathered and edited in Excel spreadsheets prior to website developement.</p>
-						 <p>One agency that was going to build a cheap website for a friend of mine even advised setting up a spread sheet to prepare his content (he was putting all the data from one catalog entry into a single cell).</p>
-						 <p>How quickly could you set up a simple Drupal site for data-entry on a $5-10 VPS? (the answer is very)</p>
+						 <p>One agency that was going to build a cheap Wordpress website for a friend of mine even advised setting up a spreadsheet to prepare his content (he was putting all the data from one catalog entry into a single cell).</p>
+						 <p>How quickly could you set up a simple Drupal site for data-entry on a $5-$10 VPS? (the answer is very easy of course)</p>
 					 </section>
 					 <section>
 						 <ul>
@@ -345,249 +352,86 @@
 				</section>
 
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
+					<section>
+					  <h2>To the command line and Drush</h2>
+					  <p>
+						  The command line seems to be stonger than ever, perhaps because OSX has a decent one, because Designers and Frontend developers are setting up Ruby and CSS pre-processors plus other workflow tools.
+					  </p>
+					  <p>
+						  I am assuming that most people don't need need to be introduced to <a href="https://github.com/drush-ops/drush">Drush</a> a PHP command line tool that has many commands for Drupal</a>
+              aside from the standard module downloading, installing disabling etc.. Many contrib modules (Features and Migrate for example) provide Drush commands that are often easier/faster to run than via the normal admin interface.
+            </p>
+				  </section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+				  <section>
+					  <h2>Drush can save time</h2>
+					  <p>Create a quick backup in your home directory:</p>
+					  <pre><code data-trim contenteditable>
+$ drush sql-dump > ~/backup.sql
+					  </code></pre>
+					  <p>Load a quick backup:</p>
+            <pre><code data-trim contenteditable>
+$ drush sqlc < ~/backup.sql
+            </code></pre>
+						<p>You can script the Drush commands with a shell script if you wish</p>
+					  <p>Note: a dev tool, not a replacement for Backup and Migrate module or server backups</p>
+          </section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+					<section>
+						<h2>Drush can bootstrap Drupal</h2>
+						<p>Create a php file and run it from the command line against Drupal using Drush.</p>
+<pre><code data-trim contenteditable>
+$ drush scr foo.php
+</code></pre>
+						<p>This will load a node and spit out on the command line</p>
+<pre><code data-trim contenteditable>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+$node = node_load(100);
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+print_r($node);
+</code></pre>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
+						<h2>Bootstrapped Drupal can do so much more</h2>
+						<p>Load some nodes and iterate over them:</p>
+<pre><code data-trim contenteditable>
+
+// Note: this is rubbish deprecated slow ass way to load nodes.
+$nodes = node_load_multiple(array(), array('type' => 'production_content'));
+
+// Iterate over the nodes and reprocess them.
+foreach ($nodes as $node) {
+
+  // Do something with each $node you evil genius you.
+  node_save($node); //muhahahaaaaaa
+}
+
+</code></pre>
+<p>You can make this as complicated as you like, refine the selection process, etc. improve the code.
 					</section>
-				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
-
+				  <section>
+						<h2>Drush works with Drupal 8 :)</h2>
+						<p>You can use Drush to experiment quickly with D8 code.</p>
+						<p>D8 also works with Composer the PHP package manager (I believe you can now use composer to manage libraries in your modules)</p>
+						<p>There is also the <a href="#">Drupal 8</a> console code that is growing all the time, basically <a href="https://www.youtube.com/watch?v=Rk4enIuhWno#t=2822">watch this video</a> and be amazed :):)</p>
+					</section>
+					<section>
+						<h2>Use Views Bulk Operations you sick puppy!</h2>
+						<p>Yes if you don't code PHP or want to set something up for somebody you can do some neat stuff with <a href="https://www.drupal.org/project/views_bulk_operations">Views Bulk Operations</a>
+						<p>There is so much more you can do with code though.....
+						  <ul>
+							  <li>you can get the rendered page for a path</li>
+						    <li>with a little helper code in a module you can even use <a href="https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_module_implements_alter/7">hook_module_implements_alter()</a> to monkey around with hook implementations in special circumstances</li>
+								<li>or just about anything you can think of with the data in Drupal</li>
+					    </ul>
+						<p>If you are a developer and nothing springs to mind at this point then ......</p>
+					</section>
+					<section>
+						<img src="images/y-u-have-no-soul.jpg">
+						<p class="shadow fragment">Let me sweeten the deal a little!</p>
+					</section>
+        </section>
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
