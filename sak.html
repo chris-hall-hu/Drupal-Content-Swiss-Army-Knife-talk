@@ -83,7 +83,7 @@
 					<p>Part case-study and part explanation of experiences and discoveries from more than a year of using Drupal as an agile tool
 					to fix legacy publishing workflows, process content and deliver/receive content from a variety of sources</p>
 					<p>
-						<small>Created by: <a href="http://chris-david-hall.info">Chris Hall</a> / <a href="http://twitter.com/cwork-chris">@cwork-chris</a> Slides can be found: <a href="https://github.com/chris-hall-hu/Drupal-Content-Swiss-Army-Knife-talk">here</a></small>
+						<small>Created by: <a href="http://chris-david-hall.info">Chris Hall</a> / <a href="http://twitter.com/cwork-chris">@cwork-chris</a><br /> Slides can be found: <a href="https://github.com/chris-hall-hu/Drupal-Content-Swiss-Army-Knife-talk">https://github.com/chris-hall-hu/Drupal-Content-Swiss-Army-Knife-talk</a></small>
 					</p>
 				</section>
 
@@ -145,7 +145,7 @@
 					  <ul>
 					    <li>Had been using Drupal for a few years in a number of different agencies and environments sometimes with mixed results, also had some exposure to Django a Python framework</li>
 					    <li>Found myself in a situation with highly pragmatic, shifting requirements and need to procees content (both existing and new) from many sources to many places</li>
-					    <li>There were already existing/commissioned sites implemented in Wordpress, ExpressionEngine Drupal 7, Drupal 6....</li>
+					    <li>There were already existing/commissioned sites implemented in Wordpress, ExpressionEngine, Drupal 7, Drupal 6....</li>
 					    <li>Many content workflows, legacy sites, some based on Word docs, email and spreadsheets</li>
 				    </ul>
 				  </section>
@@ -161,7 +161,7 @@
 						  <li>Shifting requirements/priorities</li>
 						  <li>Tight time-scales and budgets</li>
 							<li>Legacy and new sites</li>
-							<li>A wide variety of content sources and types</li>
+							<li>A wide variety of content sources and types ranging from age WYSIWYG content to highly structure xml.</li>
 							<li>A small development team (me most of the time)</li>
 					  </ul>
 					</section>
@@ -194,12 +194,12 @@
             <h2>Looking back through the lens of Drupal 8</h2>
 						<p>Jumping forward to the <em>imminent</em> release of Drupal 8 to look back on Drupal 7</p>
 						<p>The key difference should be to make it easier to find Drupal talent, currently Drupal has a long learning curve, even more worryingly even experienced Drupal developers
-							 may be taking different 'correct' but incompatible approaches (Panels, Context, etc. etc.) D8 will resuse some existing frameworks and more mainstream PHP design practices.
+							 may be taking different 'correct' but incompatible approaches (Panels, Context, etc. etc.) D8 will use some existing frameworks and more mainstream PHP design practices.
             <blockquote>An agile tool should not require an extensive learning curve before it becomes useful.</blockquote>
 					</section>
 					<section>
 						<h2>Other improvements expected from D8</h2>
-						<p>Some of the biggest current weaknesses of Drupal are to addressed</p>
+						<p>Some of the biggest current weaknesses of Drupal are to be addressed</p>
 						<ul>
 							<li>Improved experience for admins and site builders</li>
 							<li>More useful out of the box (which helps with the above)</li>
@@ -252,6 +252,7 @@
 						<h2>Content workflow</h2>
 						<p>Without lifting a finger we have user management, revisioning, roles and permissions.</p>
 						<p>Add a couple of modules such as <a href="#">Diff</a> and <a href="#">Workbench</a>, already we are building a powerful content system.
+					  <p>Workbench allows us to add stages and users to a custom editorial workflow, diff is a nice little addition that allows users who can see revisions to visualise changes between them.</p>
 					</section>
 					<section data-background="images/revs.png">
 						<h2 class="shadow fragment">Now I know who did what and when</h2>
@@ -272,7 +273,7 @@
 				<section>
 					<section>
 						<h2>Content search and discovery</h2>
-						<p>Once we build a large volume of content we have use the powerful <a href="#">Views</a> module help filter and sort.
+						<p>Once we build a large volume of content we have use of the powerful <a href="#">Views</a> module help filter and sort.
 						</p>I am confident that everybody will be familiar with views, more on the subject later
 					</section>
 					<section>
@@ -413,10 +414,11 @@ foreach ($nodes as $node) {
 						<h2>Drush works with Drupal 8 :)</h2>
 						<p>You can use Drush to experiment quickly with D8 code.</p>
 						<p>D8 also works with Composer the PHP package manager (I believe you can now use composer to manage libraries in your modules)</p>
-						<p>There is also the <a href="#">Drupal 8</a> console code that is growing all the time, basically <a href="https://www.youtube.com/watch?v=Rk4enIuhWno#t=2822">watch this video</a> and be amazed :):)</p>
+						<p>There is also the <a href="#">Drupal 8</a> console code that is growing all the time, basically <a href="https://www.youtube.com/watch?v=Rk4enIuhWno#t=2822">watch this video</a> and be amazed :):)
+						This will generate all the boilerplate code for modules, service, routes, plugins, blocks etc. for you on request.</p>
 					</section>
 					<section>
-						<h2>Use Views Bulk Operations you sick puppy!</h2>
+						<h2>Use Views Bulk Operations you!</h2>
 						<p>Yes if you don't code PHP or want to set something up for somebody you can do some neat stuff with <a href="https://www.drupal.org/project/views_bulk_operations">Views Bulk Operations</a>
 						<p>There is so much more you can do with code though.....
 						  <ul>
@@ -431,12 +433,70 @@ foreach ($nodes as $node) {
 						<p class="shadow fragment">Let me sweeten the deal a little!</p>
 					</section>
         </section>
+
+				<section>
+					<section>
+					  <h2>Querypath (to fix stinky HTML)</h2>
+					  <p><img src="images/wig.png"> WYSIWYG the epitome of evil!</p>
+					  <p><a href="http://querypath.org/">Querypath</a> is a PHP library that allows you to load in HTML and XML documents and work with them in a similar manner to JQuery.
+					  There is even a Drupal <a href="https://www.drupal.org/project/querypath">Querypath module</a> that makes things a bit easier to make the library accessible to your code.</p>
+			    </section>
+				  <section>
+							<h2>Querypath is very powerful</h2>
+							<p>You can in theory correct/adjust just about any html in a field, and fix most of the atrocities caused by hand edited html or WYSIWYG editors (because some people are going to just try to put an html page into your body field).</p>
+		<pre><code>
+$content_body = '<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>' . $content_body . '</body></html>';
+
+$qp_options = array(
+	'convert_to_encoding' => 'utf-8',
+	'convert_from_encoding' => 'utf-8',
+	'strip_low_ascii' => FALSE,
+);
+
+$qp = htmlqp($content_body, NULL, $qp_options);
+$imgs = $qp->top('img');
+
+foreach ($imgs as $img) {
+	$img->remove();
+}
+$node->body[LANGUAGE_NONE][0]['value'] = $qp->top('body')->innerHTML();
+</code></pre>
+				  </section>
+					<section>
+					   <h2>Try doing that with VBO</h2>
+						 <p>You can do more complicated things such a removing old-school named anchors and placing their anchors as
+							ids on their parent element (just an example), the sky is the limit really.</p>
+						 <p>And of course you can manipulate the html (or XML) anywhere you write code, not just in some crazy script</p>
+					</section>
+		  </section>
+
+
+
+
+
+
+
+
+
+			<section>
+				<h2>Things I haven't had to address (yet)</h2>
+				<ul>
+					<li>Multi-lingual content, Drupal 7 is pretty good at this already although it appears that Drupal 8 will raise this a couple more notches</li>
+					<li>Push notifications (will need to start thinking about this when for performance reasons at some point.)</li>
+			</section>
+			<section>
+				<h2>Final pause to reflect</h2>
+				<p>I think I am now comfortable with what I should be using Drupal for and Drupal 8 (with a bare minimum of contrib modules) should be even better for the job .........
+			</section>
+			<section>
+				<h1>This is the end</h1>
+				<p>Any easy questions?</p>
+			</section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
-
 		<script>
 
 			// Full list of configuration options available here:
@@ -446,6 +506,8 @@ foreach ($nodes as $node) {
 				progress: true,
 				history: true,
 				center: true,
+			  viewDistance: 3,
+
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
