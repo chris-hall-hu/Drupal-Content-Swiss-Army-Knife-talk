@@ -37,7 +37,7 @@
 				border-right: 1px solid #555 !important;
 				border-bottom: 1px solid #222 !important;
 				border-left: 1px solid #222 !important;
-				text-shadow: 3px 3px 2px rgba(130, 130, 45, 1) !important;
+				text-shadow: 3px 1px 2px rgba(130, 130, 45, 1) !important;
 			}
 			.shadow {
 				text-shadow: 3px 3px 2px rgba(130, 130, 45, 1) !important;
@@ -121,10 +121,8 @@
 					  <li>The Backstory</li>
 						<li>Drupal what is it good for? (hint: Content)</li>
 						<li>Prior to writing any PHP</li>
-						<li>Content for developers</li>
-						<li>Content in and Content out</li>
-						<li>Alternative use cases for Drupal</a>
-						<li>Some case studies</li>
+						<li>Drush and the command line</li>
+						<li>Modules, libraries, usecases and mini-casestudies (lots of stuff)
 						<li>Sum up, questions, heckles, lynching?</li>
 					</ul>
 				  </section>
@@ -133,6 +131,12 @@
 					</section>
 					<section data-background="images/socket.jpg">
 						<h2 class="shadow fragment">Rather than this</h2>
+					</section>
+					<section>
+						<h2>Disclaimers</h2>
+						<p>Any code examples are just for illustration, they are not guaranteed to run or be best practice,
+							best places to get proper code examples are from example modules or online.</p>
+						<p>Screen-shots have probably been sanitised, anonymised etc. to hide information of clients or clients of clients.
 					</section>
 				</section>
 
@@ -143,16 +147,16 @@
 						  Prior to Drupal, I had already worked with a variety of technologies and frameworks, going back into the mists of time, Cold Fusion, Perl, Java based etc.</p>
 					  </p>
 					  <ul>
-					    <li>Had been using Drupal for a few years in a number of different agencies and environments sometimes with mixed results, also had some exposure to Django a Python framework</li>
-					    <li>Found myself in a situation with highly pragmatic, shifting requirements and need to procees content (both existing and new) from many sources to many places</li>
+					    <li>I had been using Drupal for a few years in a number of different agencies and environments sometimes with mixed results, also had some exposure to Django a Python framework</li>
+					    <li>I found myself in a situation with highly pragmatic, shifting requirements and the need to procees content (both existing and new) from many sources to many places</li>
 					    <li>There were already existing/commissioned sites implemented in Wordpress, ExpressionEngine, Drupal 7, Drupal 6....</li>
-					    <li>Many content workflows, legacy sites, some based on Word docs, email and spreadsheets</li>
+					    <li>Many content workflows, often based on Word docs, email and spreadsheets</li>
 				    </ul>
 				  </section>
 					<section>
-						<h2>Drupal has not always turned out well</h2>
-						<p>Previous experience of Drupal not <em>always</em> good, in some projects and situations Drupal worked well, in others not!
-						I have been using Drupal for longer than my three years on Drupal.org, it started as a tool, then became <em>everything</em>. My first involvement with Django was joining a project that somebody had saved from a Drupal disaster by starting from scratch.
+						<h2>Drupal has not always turned out well for me</h2>
+						<p>My previous experience of Drupal has not <em>always</em>been good, in some projects and situations Drupal worked well, in others not!
+						I have been using Drupal for longer more than three years, it started as a tool, then became <em>everything</em>. My first involvement with Django was joining a project that somebody had saved from a Drupal disaster by starting from scratch.
 						The project was about data-processing and a normal Drupal approach did not work (happy to discuss over a beer). Many Drupal projects have gone well however.
 					</section>
 					<section>
@@ -161,7 +165,7 @@
 						  <li>Shifting requirements/priorities</li>
 						  <li>Tight time-scales and budgets</li>
 							<li>Legacy and new sites</li>
-							<li>A wide variety of content sources and types ranging from age WYSIWYG content to highly structure xml.</li>
+							<li>A wide variety of content sources and types ranging from aging WYSIWYG content to highly structured xml.</li>
 							<li>A small development team (me most of the time)</li>
 					  </ul>
 					</section>
@@ -171,7 +175,7 @@
 						   Especially as I felt I was becoming a Drupal only developer and that didn't feel entirely healthly.
 						</p>
 						<p>
-							Actually some of these issues I had already seen in previous work.
+							Actually some of these issues I had already began to become apparent in previous work.
 						</p>
 				  </section>
 				</section>
@@ -184,11 +188,10 @@
 						<blockquote>"With Drupal features are cheap and details expensive" (WunderKraut)</blockquote>
 				  </section>
 					<section>
-            <h2>Design first approach can really suck with Drupal</h2>
+            <h2>Design first approach can at times be really unpleasant with Drupal</h2>
 						<p>This WunderKraut blog <a href="http://www.wunderkraut.com/blog/how-to-fail-in-a-drupal-project-fixed-price-contracts/2013-07-10">How to fail in a Drupal project: Fixed price contracts</a>
 						says most of what I feel after years of Drupal. If someone hands you a beautiful PSD designed project and says make it so,
 						you really may be better off with a more light-weight framework. (nobody going to drag me off the stage...?)</p>
-						<small>There are many linkouts for this talk, but don't worry all the links are on a <a href="">slide at the end :)</a></small>
 					</section>
 					<section>
             <h2>Looking back through the lens of Drupal 8</h2>
@@ -204,7 +207,7 @@
 							<li>Improved experience for admins and site builders</li>
 							<li>More useful out of the box (which helps with the above)</li>
 							<li>Better separation of configuration from code and data</li>
-							<li>Improved templating (although I suspect still behind some alternatiives)</li>
+							<li>Improved templating (although I suspect still behind some alternatives)</li>
 						</ul>
 					</section>
 					<section>
@@ -257,6 +260,9 @@
 					<section data-background="images/revs.png">
 						<h2 class="shadow fragment">Now I know who did what and when</h2>
 					</section>
+					<section data-background="images/diff.png">
+						<h2 class="shadow fragment">Some changes visualised, note: the html from these xml articles is old-school<h2>
+					</section>
 				</section>
 
 				<section>
@@ -274,7 +280,7 @@
 					<section>
 						<h2>Content search and discovery</h2>
 						<p>Once we build a large volume of content we have use of the powerful <a href="#">Views</a> module help filter and sort.
-						</p>I am confident that everybody will be familiar with views, more on the subject later
+						I am confident that everybody will be familiar with Views, they will appear again later.</p>
 					</section>
 					<section>
 						<h2>Search API</h2>
@@ -296,8 +302,8 @@
 						<h2>Pause to reflect</h2>
 							<ul>
 								<li>We can do a lot (and so much more), without touching PHP</li>
-								<li>Drupal 8 (assuming a handful of contrib modules) can do it better, inline editing for example</li>
-								<li>This is FAST, the slow bits are trying to match those design PSDs to build a frontend.</li>
+								<li>Drupal 8 (assuming a handful of contrib modules) will do it better, inline editing for example</li>
+								<li>Building a Content Management System is relatively fast, the slow bits are trying to match those design PSDs to build a frontend.</li>
 							</ul>
 							<p>We can do better though...</p>
 					</section>
@@ -305,13 +311,13 @@
 							<h2>Improving the backend</h2>
 							<p>Jeni Tehan has an excellent talk on <a href="https://www.youtube.com/watch?v=53s0njgpc7U">Building a Tasty Backend</a>
 								that suggests how to significantly improve the content authoring experience using available modules and techniques.</p>
+							<p>Typical agency Drupal projects I have been involved with have devoted very little time and though to the back-end experience</p>
 					</section>
 				</section>
 
 				<section>
 					 <section>
-					   <h2>Usecase 1, replacing a Spreadsheet with Drupal</h2>
-						 <p>You may even reduce the amount of evilness in the world ;)</p>
+					   <h2>Usecase: replacing a spreadsheet with Drupal</h2>
 						 <p>I have encountered more than one case of content being collated, gathered and edited in Excel spreadsheets prior to website developement.</p>
 						 <p>One agency that was going to build a cheap Wordpress website for a friend of mine even advised setting up a spreadsheet to prepare his content (he was putting all the data from one catalog entry into a single cell).</p>
 						 <p>How quickly could you set up a simple Drupal site for data-entry on a $5-$10 VPS? (the answer is very easy of course)</p>
@@ -349,6 +355,7 @@
 							<p>Why do I often sense resistence to this level of training?</p>
 							<p class="fragment">Perhaps because then they will realise there is hardly any custom code in many sites :P</p>
 							<p class="fragment">Actually most of the custom code on many sites is CSS, HTML and JS.</p>
+							<p class="fragment">Which means most of the work is done by the Themer?</p>
 					</section>
 				</section>
 
@@ -356,10 +363,10 @@
 					<section>
 					  <h2>To the command line and Drush</h2>
 					  <p>
-						  The command line seems to be stonger than ever, perhaps because OSX has a decent one, because Designers and Frontend developers are setting up Ruby and CSS pre-processors plus other workflow tools.
+						  The command line seems to be stonger than ever, perhaps because OS X has a decent one, because Designers and Frontend developers are setting up Ruby and CSS pre-processors plus other workflow tools.
 					  </p>
 					  <p>
-						  I am assuming that most people don't need need to be introduced to <a href="https://github.com/drush-ops/drush">Drush</a> a PHP command line tool that has many commands for Drupal</a>
+						  I am assuming that most Drupal users don't need need much of an introduction to <a href="https://github.com/drush-ops/drush">Drush</a> a PHP command line tool that has many commands for Drupal</a>
               aside from the standard module downloading, installing disabling etc.. Many contrib modules (Features and Migrate for example) provide Drush commands that are often easier/faster to run than via the normal admin interface.
             </p>
 				  </section>
@@ -384,12 +391,14 @@ $ drush sqlc < ~/backup.sql
 <pre><code data-trim contenteditable>
 $ drush scr foo.php
 </code></pre>
-						<p>This will load a node and spit out on the command line</p>
+						<p>This in foo.php will load a node and spit out on the command line</p>
 <pre><code data-trim contenteditable>
+&lt;?php
 
 $node = node_load(100);
 
 print_r($node);
+
 </code></pre>
 					</section>
 					<section>
@@ -470,23 +479,239 @@ $node->body[LANGUAGE_NONE][0]['value'] = $qp->top('body')->innerHTML();
 					</section>
 		  </section>
 
+      <section>
+				<h2>Getting stuff in and out of Drupal</h2>
+				<p>A content management system would be a pretty poor system if there weren't ways to get the content out.</p>
+				<p>The base-level, the universal solvent of data is the csv file, you can of course script some PHP and cook these yourself,
+					or alternatively use the <a href="https://www.drupal.org/project/views_data_export">Views Data Exporter</a> module.
+			</section>
 
+			<section>
+			  <section>
+			  	<h2>Casestudy: finding content needles in a haystack</h2>
+			   	<p>I had a large library of XML documents, which originally had been used for print and PDF etc.
+				  	Some of these had been inserted into a number of Drupal 6 websites over the years (via a basic XSL transform to HTML)</p>
+				  <p>Tracking what was where for updates was done in a series of spreadsheets there was no direct information in the Drupal sites to identify them from the countless thousands of other articles.
+					There were duplicates, orphans, documents floating outside of any menu systems (even the titles may not match).</p>
+				  <p>We had to find them and track them, easy to add a new field so we can identify them going forward, not so easy to actually find them and match them in the first place.</p>
+			  </section>
+				<section>
+					<h2>Benfits of hindsight</h2>
+					<ul>
+						<li>SPREADSHEETS ARE NOT DATABASES!!!</li>
+						<li>Record everything you can, the simple expedient of adding the ids of the original documents to Drupal over the years would have made this somewhat easier.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Not too painful in the end</h2>
+					<ul>
+					  <li>We had already created a Drupal website (Production System) that just contained all the XML content (with the transformed HTML and any categorisation)</li>
+					  <li>We exported csv files from the central store and wrote a script could iterate over these files via Drush.</li>
+					  <li>We had the 'best guess' about what should be there by scripting the information from the SPREADSHEET THAT WAS NOT A DATABASE</li>
+					  <li>Fiddle, rinse, repeat, find clues; we could code something to find the content also using the interesting PHP <a href="http://php.net/manual/en/function.similar-text.php">similar_text()</a> function.
+				  </ul>
+					<p>Without too much pain we cross-matched the information found some atrocities and had a lot of useful data in our production system.
+				</section>
+				<section>
+					<h2>The basic Production System is already becoming smarter</h2>
+					<img src="images/prodview.png">
+					<p>We now know where this content sits (if at all) on the various sites and even have an uber-taxonomy that shows us where the items site in the various menus on the sites.
+				</section>
+			</section>
 
+      <section>
+				<section>
+				  <h2>RSS via Views</h2>
+				  <p>RSS despite being a bit long in the tooth is still a valuable tool for simple syndication of content where the likes of title, description, content will suffice. There are various Drupal modules that can extend the basic RSS functionality available in Drupal and Views.
+				    <a href="https://www.drupal.org/project/views_rss">Views RSS module</a> a fields-based views style plugin for RSS and various other plugins can provide for extensions to the RSS specification.</p>
+				  </p>
+				  <p>Aside from it's original use-case RSS can be used to provide a constant feed of a subset of content and allow updates to content to be obtained.</p>
+				  <p>Be clear that everyone understands how it is to be used, lay-people can confuse the use-case of a simple RSS widget as opposed to using RSS to load content from somewhere else.</p>
+			  </section>
+				<section data-background="images/rss.png">
+					<h2 class="fragment shadow">The flexibility provided by Views with RSS</h2>
+			  </section>
+			</section>
 
+			<section>
+				<section>
+					<h2>Casestudy: replacing an ancient news editorial workflow</h2>
+					<p>There was a long-existing news content type that I was introduced to, a number of news items were produced each week
+						via a complex editorial workflow involving a writer, editor, administrator(who entered content into a website), proofer(who checked on the website) etc. etc.</p>
+					<p>Some participants worked out of the office, everything started on MS Word documents and emails.</p>
+					<p>The content was hand-entered directly onto 6 different Drupal 6 web sites, then entered seperately onto a Wordpress website to provide RSS feeds to external users
+						(yes normal people often find it easier to install and use Wordpress than fiddle with even an existing Drupal site they have been given)</p>
+				</section>
+				<section>
+          <h2>We built the news into the production system</h2>
+					<p>We built the news content type into our Drupal Production System, created appropriate roles and a workflow for all the steps in Workbench.</p>
+					<p>Initially the administrator started entering news into the Production System, the proofer proofed it and it was published into an RSS feed that with a little coaxing was automatically fed into each Drupal 6 site.</p>
+					<p>Turns out we didn't have the complete picture the Drupal 6 site news had a description, block of links and image added, the content for the Wordpress feeds required a copyright message.</p>
+					<p>We added more fields for the new content sections new RSS displays to the view, the RSS feeds represented the different versions, in one case the img tags get stripped out (via  hook_views_rss_item_elements_alter()) </p>
+				</section>
+				<section>
+					<h2>The hardest thing can be people</h2>
+					<p>There was resistance from people initially (people naturally don't like change). Even though the editor had to deal with fixing  dodgy characters from Word on OS X, prior to putting it into Word on a PC (introducing more problems for the administrator)</p>
+					<p>We chased the process back up the chain get people to work directly with Drupal and making the Production System back-end easier to use.</p>
+					<p>Now they love it, giving something to people to make their lives easier and remove the Drudgery wins them over.</p>
+				  <p>None of the individual steps were difficult in Drupal.</p>
+				</section>
+				<section data-background="images/news.png">
+					<h2 class="fragment shadow">Workbench organises it for you, sorry I can't show any news<h2>
+				</section>
+			</section>
 
+			<section>
+				<section>
+				  <h2>So many more modules that add to the content toolset</h2>
+				  <p>Drupal has too many modules and features, after laying out the basic ones so far there is little time to go in too much detail over even a fraction of the tools that can be used to work on content.
+					  I will quickly introduce a couple more of the significant others in the next slides.</p>
+			  </section>
+				<section data-background="images/knife.jpg">
+					<h2 class="fragment shadow">If Drupal really was a Swiss Army Knife it would look like this</h2>
+				</section>
+			</section>
 
+			<section>
+				<h2>Migrate module</h2>
+        <p>The <a href="https://www.drupal.org/project/migrate">migrate module</a> provides a flexible framework for migrating content into Drupal. </p>
+			  <p>As the <a href='https://www.drupal.org/node/1006982'>getting started with migrate page</a> states 'To develop migration processes based on the Migrate framework, you will need to create your own Migration classes in a custom module.' this is not as scary as it sounds and actually
+					is a great way to start getting into object oriented programming with PHP if you haven't done so before</p>
+			  <p>Of most interest to us originally was the supporting <a href="https://www.drupal.org/project/migrate_d2d">Drupal-to-Drupal</a> migration module (it does what it says :))</p>
+			</section>
 
+			<section>
+				<h2>RestWS</h2>
+			  <p>The <a href="https://www.drupal.org/project/restws">RESTful Web Services</a> module exposes Drupal resources (e.g. entities) as RESTful web services.
+				Which means you can perform CRUD (create, read, update, delete) operations on all entities.</p>
 
+				<blockquote>From the module page: "#D8CX: I pledge that RESTWS will be obsolete on the day that Drupal 8 is released, because we have REST module in D8 core now!"</blockquote>
+			</section>
+
+			<section>
+				<h2>UUID module</h2>
+				<p>The <a href="https://www.drupal.org/project/uuid">UUID module</a> automatically generates a Universally Unique Identifier for all core Drupal entities (example: <strong>000e96ba-b7ee-42e1-8094-ca9220c0c82a</strong>).
+				This can be used for example in a central content Production System where a reference to the UUID can uniquely identify the source content on all sites where it appears. The module will also generate seperate unique ids for all revisions in the node_revision table.
+				</p>
+			  <p>You don't have to do anything it all happens automatically and unique ids are available in loaded nodes etc.</p>
+			</section>
+
+			<section>
+        <h2>Text Formats and Filters</h2>
+				<p>The text formats and filters in Drupal are extremely powerful, this is just a nod in their general direction rather than an in depth investigation, but those
+					 text formats: Full HTML, Filtered HTML, Plain Text etc. can be edited and added to in the back-end.</p>
+				<p>We have attached the <a href="https://www.drupal.org/project/htmlpurifier">HTML Purifier</a> filter to a 'migrate' format so that we can invoke it programatically.</p>
+        <p>The Drupal <a href="https://api.drupal.org/api/drupal/modules%21filter%21filter.module/function/check_markup/7">check_markup()</a> function can be used to invoke a filter programatically.</p>
+				<pre><code>
+$filtered_text = check_markup($text,'migrate');
+		</code></pre>
+		  </section>
+
+			<section>
+        <section>
+					<h2>Usecase: re-purpose existing content for re-distribution/resale</h2>
+					<p>We had many pieces of content existing on 5 aging Drupal 6 sites that needed to be cherrypicked, some would be useable for resale.</p>
+					<p>Although there were many candidates they existed amongst thousands of pieces of content that were not reusable.</p>
+					<p>There was only one content type on the Drupal 6 sites and categorisation didn't help much in selection</p>
+				</section>
+
+				<section>
+					<h2>Giving content to others is hard</h2>
+					<p>Aside from the delivery mechanism you have to think about what you are delivering</p>
+					<p>HTML generated on an aging Drupal 6 site in a WYSIYG editor probably won't sit well in somebody elses website.</p>
+					<p>Even if you account for HTML4 -> HTML5 (the other way is much worse) you should really stip out presentational data, classes, ids etc.</p>
+				</section>
+
+				<section>
+					<h2>Iterative</h2>
+					<p>We used Migrate module to migrate from Drupal 6 sites into the Drupal 7 Production System, Querypath and some custom filtering
+						were key to cleaning up/rewriting the HTML.</p>
+					<p>Progressive iterations of migration and triage, initially based on educated guesses we added fields and view to the Production system so that the original editorial staff could triage with checkboxes.</p>
+			    <p>The data from the triage was exported via csv and pushed back into Drupal 6 site (scripts and Drush) so we could mark up which items to ignore.</p>
+					<p>Alongside ignoring some articles for potential reuse this also acted a big quality excercise, some articles were deleted, updated etc.</p>
+				</section>
+
+				<section>
+				  <h2>Eventual success</h2>
+					<p>We ended up with a collection of cleaned, categorised content in the Production system that could be re-purposed</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+				  <h2>Code quality?</h2>
+				  <p>Parts of this as presented here may seem a little casual and relaxed, all the usual Drupal approaches can still be applied however. There shouldn't be anything wrong in taking an iterative approach.</p>
+	        <p>Scripts that bootstrap Drupal can be well written, tested, they can contain functions that can be moved to helper functions in a custom module or converted to custom Drush commands if needed.</p>
+				</section>
+				<section>
+					<h2>Defending against chaos</h2>
+					<ul>
+					   <li>Use Git version control (it starts being useful even when just used locally)</li>
+					   <li>Take backups</li>
+					   <li>Move more mature elements to <a href="https://www.drupal.org/project/features">features as needed</a></li>
+						 <li>Name fields sensibly and re-use across content types where possible</li>
+						 <li>Flexibility is good, virtual machines, light-weight VPSs are good for experimentation regardless of the final production environment.
+						 <li>etc. etc.</li>
+			    </ul>
+				</section>
+				<section>
+					<h2>Be Pragmatic</h2>
+					<ul>
+					  <li>Testing is good but rejecting everything that doesn't have tests is bad</li>
+					  <li>Simpletest in Drupal is limited in usefulness, how many people use it for day to day development?</li>
+					  <li>Agile methodologies are good but stand-ups and story-cards are NOT the product</li>
+					</ul>
+					<p>Drupal 8 does support PHP Unit as well (I have not tried it yet though).
+					<p>I have seen cases of serious obstacles to project completion because of blind adherence to methodologies without full understanding, this makes me feel....</p>
+
+				</section>
+				<section data-background="images/angry.jpg">
+					<h2 class="shadow fragment">Despite my mild appearance :)</h2>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Usecase: Drupal for content only?</h2>
+					<p>Drupal is so strong for content I believe there is also a strong usecase for using Drupal for content only. A back-end content management system feeding a seperate front-end.</p>
+				  <p>This is not new of course <em>Headless Drupal</em> in short, with Headless Drupal, a visitor to the website will not interact with Drupal directly. Often the front-end suggested is
+						some kind of Javascript framework but why not an alternative light-weight CMS (especially if there is one already in place).</p>
+				  <p class="fragment">OK I can see that being a hardsell ;)</p>
+				</section>
+
+				<section>
+					<h2>Drupal behind Drupal(s)</h2>
+          <p>Perhaps an easier pill to swallow is fronting a headless Drupal with ... Drupal?</p>
+					<ul>
+						<li>Content on the front-end can be simpler, might not store revisions, editorial meta data etc.</li>
+						<li>Administration and roles on the front-end system will be much simpler, just for selected local content.</li>
+						<li>Storage requirements on the front-end will be reduced</li>
+						<li>Performance of the front should be better, it should be carrying fewer modules</li>
+					  <li>Security on the back-end can be much tighter, trashing and rebuilding a light-weight front end after Drupageddon would have been a better option for some.</li>
+					  <li>Themers can be working on the front-end, back-enders working on back-end, no toes being treaded on</li>
+					</ul>
+					<p>Not for every situation perhaps. There may be even simpler cases where a static front-end site is periodically generated.</p>
+				</section>
+
+				<section>
+					<h2>Similar things are happening already</h2>
+					<p>A Drupalcon Amsterdam talk by Larry Garfield and Hagen Last <a href="https://www.youtube.com/watch?v=S9NvVAYxO58">DrupalCon Amsterdam 2014: A Decoupled Drupal with Silex</a> a very interesting and probably completly unique approach involving Drupal, Silex, Elastic search and Varnish</p>
+				</section>
+			</section>
 
 			<section>
 				<h2>Things I haven't had to address (yet)</h2>
 				<ul>
 					<li>Multi-lingual content, Drupal 7 is pretty good at this already although it appears that Drupal 8 will raise this a couple more notches</li>
-					<li>Push notifications (will need to start thinking about this when for performance reasons at some point.)</li>
+					<li>Push notifications (will need to start thinking about this for performance reasons at some point.)</li>
 			</section>
+
 			<section>
 				<h2>Final pause to reflect</h2>
-				<p>I think I am now comfortable with what I should be using Drupal for and Drupal 8 (with a bare minimum of contrib modules) should be even better for the job .........
+				<p>We are just completing a project to make highly customisable Drupal 7 sites that can pull any of the various content types from the maturing Production System</p>
+				<p>We are using Drupal to front Drupal now and that front-end is about the only thing that has run over schedule so far (thanks to the pesky 10% on a highly designed site).</p>
+				<p>I think I am now comfortable with what I should be using Drupal for and Drupal 8 (with a bare minimum of contrib modules) should be even better for the job .........</p>
+			  <p>Agility is about things that work, as near a possible to when they are most needed.</p>
 			</section>
 			<section>
 				<h1>This is the end</h1>
